@@ -71,7 +71,7 @@ module datapath (
         if (mem_write)
             data_mem[alu_result[9:2]] <= reg_data2;
 
-        regfile[0] <= 0; // Ensure x0 is always zero
+        regfile[0] <= 0; // I made x0 to always be zero
         
     end
 endmodule
